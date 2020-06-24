@@ -1,0 +1,25 @@
+alert(5**4);
+
+var seconds=prompt("Введите число: ", '');
+if (seconds>=10)
+{
+	alert(seconds);
+}
+else
+{
+	alert(seconds**2);
+}
+
+alert(seconds++);
+alert(seconds--);
+
+var a =5;
+var b =8;
+if(a==5 && b==8)
+{
+	alert(a+" и "+b);
+}
+else if (a==5 || b!=8) 
+{
+	alert(a+" или "+b);
+}
