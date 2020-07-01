@@ -1,0 +1,333 @@
+#layer1 { z-index: 3; }
+#layer2 { z-index: 1; }
+#layer3 { z-index: 2; }
+#layer4 { z-index: 3; }
+body{
+	margin:0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.parallax {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	min-height: 100vh;
+	z-index:-1;
+}
+
+.layer{
+	position: absolute;
+	left:-10%;
+	top:0;
+	width: 110%;
+	height:100%;
+
+}
+
+.layer-bg{
+	background: url(58cee41190df715ae82ae4b9.png) center no-repeat;
+	background-size: cover;
+}
+.layer-1{
+	background: url(rocket.png) center no-repeat;
+	background-size: cover;
+}
+.layer-2{
+	background: url(s1200.png) bottom no-repeat;
+	background-size: cover;
+}
+
+.header{
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  display: flex;
+  align-items: normal;
+  align-content: center;
+  overflow: auto;
+  background-color: rgba(124, 136, 194, 0.5);
+  border-bottom: 2px solid grey;
+  justify-content: center;
+}
+
+.header__logotip img{
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width:20%;
+  height:50%;
+  padding-left: 200px;
+}
+
+.header__list{
+	display: flex;
+	align-items: center;
+	margin-left: 286px;
+	margin-right: 20px;
+	
+}
+
+.header__list ul{
+	display: flex;
+	align-items: normal;
+	padding-top: 11px;
+	padding-bottom: 15px;
+	list-style-type: none;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.header__list li{
+	font-family:'Fredoka One', cursive;
+	font-size: 20px;
+	display: flex;
+	line-height: 17px;
+	margin-right: 20px;
+	font-style: normal;
+	font-weight: normal;
+	width: max-content;
+}
+
+.header__list a{
+	text-decoration:none;
+	color: rgba(73, 97, 143, 1);
+	-webkit-text-stroke: 0.4px white;
+}
+
+.__main__menu {
+	position: absolute;
+	width:1366px;
+	height:768px;
+	display: flex;
+  	align-content: center;
+  	justify-content: center;
+  	list-style-type: none;
+}
+
+._nav__input{
+	position: absolute;
+	display: flex;
+  	width: 100%;
+  	top: 350px;
+  	display: flex;
+  	align-items: normal;
+}
+
+input[name="Откуда"]{
+	border: 1px solid #cccccc;
+   	border-radius: 50%;
+   	background: center no-repeat;
+   	background-image:url(земля.png); 
+   	background-size: 115%;
+    outline: none; 
+    height: 100px;
+    width: 100px; 
+    color: #4726ff;
+    font-size: 20px; 
+    font-family:'Oswald', sans-serif;
+    text-align: center;
+    text-shadow: 2px 4px 4px #1d0296;
+    -webkit-text-stroke: 1px white;
+
+}
+
+input[name="Куда"]{
+	border: 1px solid #cccccc;
+   	border-radius: 50%;
+   	background: center no-repeat;
+   	background-image:url(юпитер.png); 
+   	background-size: 140%;
+    outline: none; 
+    height: 200px;
+    width: 200px; 
+    color: yellow;
+    font-size: 32px; 
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-shadow: 2px 4px 4px orange;
+    -webkit-text-stroke: 1px white;
+}
+
+input[name="Туда"]{
+	position: absolute;
+	border: 1px solid #cccccc;
+   	border-radius: 50%;
+   	background: center no-repeat;
+   	background-image:url(марс.jpg); 
+   	background-size: 210%;
+    outline: none; 
+    height: 100px;
+    width: 100px; 
+    color: #360302;
+    font-size: 10px; 
+    font-family: 'Oswald', sans-serif;
+    right:0;
+    text-shadow: 2px 4px 4px #5c1f1c;
+    -webkit-text-stroke: 1px white;
+}
+
+input[name="Обратно"]{
+	position: absolute;
+	border: 1px solid #cccccc;
+   	border-radius: 50%;
+   	background: center no-repeat;
+   	background-image:url(Mercury.png); 
+   	background-size: 190%;
+    outline: none; 
+    height: 110px;
+    width: 110px; 
+    color:#3b2600;
+    right:0;
+    font-size: 12px; 
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 4px 4px orange;
+    -webkit-text-stroke: 1px white;
+}
+input[type="text"]:focus {
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.input1{
+	display:flex;
+	position: absolute;
+	width:200px;
+	height:50px;
+	left: 230px;
+  	top: 0px;
+}
+
+.input2{
+	position: absolute;
+	display:flex;
+	width:200px;
+	height:50px;
+	left: 460px;
+  	top: 0px;
+}
+.input3{
+	position: absolute;
+	display:flex;
+	width:200px;
+	height:50px;
+	left: 700px;
+  	top: 0px;
+}
+.input4{
+	position: absolute;
+	display:flex;
+	width:200px;
+	height:50px;
+	left: 930px;
+  	top: 0px;
+}
+
+.__main__content {
+  	display: flex;
+  	align-items: normal;
+  	align-content: center;
+  	background: rgba(228, 230, 240, 0.5) center no-repeat;
+  	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  	justify-content: center;
+  	position:absolute;
+  	top:700px;
+  	left:90px;
+  	right:90px;
+  	
+}
+
+.__content__block1{
+	position: absolute;
+	display:flex;
+	top:50px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 100px;
+	font-family:'Fredoka One', cursive;
+	font-size: 25px;
+}
+
+.__block1__p{
+	position: absolute;
+	display: flex;
+	top:100px;
+	margin-bottom: 1000px;
+}
+
+
+.__content__block2{
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  position:relative;
+  justify-content: center;
+  top:500px;
+
+}
+
+.__block2__el{
+	padding-right:20px;
+}
+
+.h1{
+	font-family:'Fredoka One', cursive;
+	font-size: 25px;
+	color:#0E51A7;
+	text-shadow: 2px 4px 4px #0E51A6;
+    -webkit-text-stroke: 1px blue;
+}
+
+.a{
+	text-decoration: none;
+	color:#4282D3;
+	font-size: 20px;
+	font-family: 'Fredoka One', cursive;
+	border-radius: 10%;
+	border-bottom: 2px solid #679ED2;
+	text-shadow: 2px 4px 4px #679ED1;
+    -webkit-text-stroke: 1px #044f75;
+}
+
+.p{
+	font-family:'Fredoka One', cursive;
+	font-size: 16px;
+	color:#0070a8;
+}
+
+
+.__footer{
+	position: fixed;
+	height: 50px;
+	bottom: 0;
+	width:100%;
+	display: flex;
+  	align-items: normal;
+  	align-content: center;
+  	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  	background-color: rgba(124, 136, 194, 0.5);
+  	border-top: 2px solid grey;
+  	justify-content: center;
+}
+
+.__footer__block{
+	display: flex;
+  align-items: center;
+  list-style-type: none;
+
+}
+
+.__block__p{
+	font-family:'Fredoka One', cursive;
+	font-size: 16px;
+	color:#024E68;
+}
